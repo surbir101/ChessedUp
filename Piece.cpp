@@ -1,21 +1,25 @@
 #include "Piece.h"
 #include <iostream>
+#include <string>
 
 using namespace std;
 
+//Piece class implementation file
 
-    Piece::Piece(bool white)
+//Constructor
+    Piece::Piece(bool white, bool killed)
     {
         setWhite(white) ;
+        setKilled(killed) ;
     }
 
 
-     void Piece::setWhite(bool white)
+     void Piece::setWhite(bool white)   //setter
     {
        this->white = white ;
     }
 
-     bool Piece::isWhite()
+     bool Piece::isWhite()  //getter
     {
         if(white == true)
             return true;
@@ -23,19 +27,18 @@ using namespace std;
             return false;
     }
 
-    void Piece::setKilled(bool killed)
+    void Piece::setKilled(bool killed)  //setter
     {
        this->killed = killed ;
     }
 
-     bool Piece::isKilled()
+     bool Piece::isKilled() //getter
     {
         if(killed == true)
             return true;
         else
             return false;
     }
-
 
 
 
