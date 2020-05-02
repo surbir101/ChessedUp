@@ -40,9 +40,12 @@ using namespace std;
             return false;
     }
 
+    /*destructor
+    Piece::~Piece()
+    {
 
 
-
-
+    }
+*/
 
 
