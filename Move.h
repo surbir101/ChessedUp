@@ -15,13 +15,18 @@ class Move {
 
 
 
-     Move(Player* player, Spot* start, Spot* ending)
-    {
-        this->player = player;
-        this->start = start;
-        this->ending = ending;
-        this->pieceMoved = start->getPiece();
-    }
+     Move(Player*, Spot*, Spot* );
+
+     Player* getPlayer() ;
+     void setPlayer(Player*) ;
+
+     Spot* getStart() ;
+     void setStart(Spot*) ;
+
+
+     Spot* getEnding() ;
+     void setEnding(Spot*) ;
+
 
 
 } ;
