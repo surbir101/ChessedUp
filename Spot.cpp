@@ -4,17 +4,33 @@
 
 using namespace std;
 
+//Spot class implementation file
 
+Spot::Spot()
+{
+    this->x = -1;
+    this->y = -1 ;
+    this->piece = nullptr ;
+}
 
-Spot::Spot(Piece p)
+Spot::Spot(int x, int y, Piece *p)
+{
+    this->x = x ;
+    this->y = y ;
+    this->piece = p ;
+}
+
+void Spot::setPiece(Piece *p)
 {
     this->piece = p ;
 }
 
-void Spot::setPiece(Piece p)
+Piece* Spot::getPiece()
 {
-    this->piece = p ;
+    return this->piece ;
+
 }
+
 
 void Spot::setX(int x)
 {
@@ -36,4 +52,20 @@ int Spot::getY()
     return y ;
 }
 
+
+
+void Spot::setAll(int x, int y, Piece *p)
+{
+    this->x = x ;
+    this->y = y ;
+    this->piece = p ;
+}
+
+/*destructor
+Spot::~Spot()
+{
+    delete this->piece ;
+
+}
+*/
 

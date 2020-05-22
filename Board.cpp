@@ -12,13 +12,12 @@
 #include "Spot.h"
 #include "Piece.h"
 
-using namespace std;
+
 
 
 Board::Board()
 {
     cout << "Placing board pieces.." << endl ;
-
 
     boxes[0][0] = new Spot(0,0,new Rook(true,false)) ;
     boxes[0][1] = new Spot(0,1,new Knight(true,false)) ;
@@ -49,8 +48,50 @@ Board::Board()
       boxes[6][i] = new Spot(6,i,new Pawn(false,false)) ;
 
     }
+    // now initialize empty spots with x,y,nullptr
+
+       for(int i = 2; i<6; i++)
+    {
+        for(int j = 0; j<8 ; j++)
+        {
+          boxes[i][j] = new Spot(i,j,nullptr) ;
+
+        }
+
+    }
+
 
     cout << "Pieces placed" << endl ;
+
+}
+
+void Board::printBoard()
+{
+
+cout << " " << " ";
+    for(int i =0; i<8; i++)
+    {
+        cout << i << " " << " "   ;
+    }
+    cout << endl ;
+
+    for(int i =0; i < 8; i++)
+{
+    cout << i << " " ;
+    for(int j = 0; j < 8; j++)
+    {
+        if(boxes[i][j]->getPiece() == nullptr)
+            cout << " " << " " << " " ;
+        else
+            boxes[i][j]->getPiece()->printP();
+
+    }
+
+    cout << endl ;
+}
+
+    cout << endl ;
+
 
 }
 

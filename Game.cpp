@@ -35,7 +35,7 @@ void Game::setStatus(GameStatus status)
 bool Game::playerMove(Player* player, int startX, int startY, int endX, int endY)
 {
     Spot* startBox = board.boxes[startX][startY];
-    Spot* endBox = board.boxes[startY][endY];
+    Spot* endBox = board.boxes[endX][endY];
     Move* move1 = new Move(player, startBox, endBox);
     return this->makeMove(*move1, player);
 
@@ -58,8 +58,7 @@ Piece* sourcePiece = move1.getStart()->getPiece();
         }
 
         // valid move?
-        if (!sourcePiece->canMove(&board, move1.getStart(),
-                                            move1.getEnding())) {
+        if (!sourcePiece->canMove(&board, move1.getStart(), move1.getEnding())) {
             return false;
         }
 
@@ -97,5 +96,14 @@ Piece* sourcePiece = move1.getStart()->getPiece();
 
         return true;
     }
+
+//void Game::printBoard()
+//{
+
+
+//}
+
+
+
 
 

@@ -34,8 +34,6 @@ Move::Move(Player* player, Spot* start, Spot* ending)
 
      }
 
-
-
      Spot* Move::getEnding()
      {
          return this->ending ;
@@ -45,6 +43,37 @@ Move::Move(Player* player, Spot* start, Spot* ending)
      {
          this->ending = ending ;
      }
+
+
+
+    Piece* Move::getPieceMoved()
+    {
+        return this->pieceMoved ;
+    }
+
+    void Move::setPieceMoved(Piece* piece)
+    {
+        this->pieceMoved = piece ;
+    }
+
+    Piece* Move::getPieceKilled()
+    {
+        return this->pieceKilled ;
+    }
+
+    void Move::setPieceKilled(Piece* piece)
+    {
+        this->pieceKilled = piece ;
+    }
+
+
+
+
+
+
+
+
+
 
 
 

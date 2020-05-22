@@ -1,8 +1,11 @@
 #ifndef KING_H
 #define KING_H
 #include "Piece.h"
-#include <iostream>
-using namespace std;
+#include "Board.h"
+#include "Spot.h"
+
+#include <cstdlib>
+
 
 
 
@@ -11,11 +14,51 @@ class King : public Piece
 
 public:
 
+
+
     King(bool white, bool killed) : Piece(white,killed){}
 
-    void canMove()
+     bool canMove(Board* game, Spot* start, Spot* ending)
     {
-        cout << "hello from King, a derived class" << endl ;
+        cout << "hello from King a derived class" << endl ;
+
+           // we can't move the piece to a Spot that
+        // has a piece of the same color
+
+        if(ending->getPiece() != nullptr)
+        {
+            if(ending->getPiece()->isWhite() == this->isWhite())
+                return false ;
+            else
+            {
+                int x = abs(start->getX() - ending->getX());
+                int y = abs(start->getY() - ending->getY());
+                if (x + y == 1)
+                    return true;
+                else
+                    return false;
+            }
+        }
+        else
+        {
+             int x = abs(start->getX() - ending->getX());
+             int y = abs(start->getY() - ending->getY());
+             if (x + y == 1)
+                return true;
+             else
+                return false;
+
+        }
+
+    }
+
+    void printP()
+    {
+
+        if(white == true)
+            cout << "KI " ;
+        else
+            cout << RED << "KI " << RESET  ;
     }
 
 
@@ -23,5 +66,3 @@ public:
 
 
 #endif // KING_H
-
-

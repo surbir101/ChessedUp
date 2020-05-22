@@ -6,7 +6,7 @@ class ComputerPlayer : public Player
 {
 
 public:
-    ComputerPlayer(bool whiteSide)
+    ComputerPlayer(bool whiteSide) : Player(whiteSide)
     {
         this->whiteSide = whiteSide ;
         this->humanPlayer = false;

@@ -34,6 +34,7 @@ public:
      void setStatus(GameStatus) ;
      bool playerMove(Player*, int, int, int, int) ;
      bool makeMove(Move, Player*) ;
+   //  void printBoard() ;
 
 
 

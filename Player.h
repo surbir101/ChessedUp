@@ -8,15 +8,17 @@ public:
     bool whiteSide ;
     bool humanPlayer ;
 
+    Player(bool) ;
 
-     bool isWhiteSide()
-    {
-        return this->whiteSide == true;
-    }
-     bool isHumanPlayer()
-    {
-        return this->humanPlayer == true;
-    }
+     void setWhiteSide(bool) ;
+     bool isWhiteSide() ;
+
+     void setHumanPlayer(bool) ;
+     bool isHumanPlayer() ;
+
+
+
+
 
 
 

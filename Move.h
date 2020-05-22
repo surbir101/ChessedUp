@@ -28,6 +28,14 @@ class Move {
      void setEnding(Spot*) ;
 
 
+    Piece* getPieceMoved() ;
+    void setPieceMoved(Piece*) ;
+
+    Piece* getPieceKilled() ;
+    void setPieceKilled(Piece*);
+
+
+
 
 } ;
 

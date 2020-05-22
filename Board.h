@@ -2,20 +2,23 @@
 #define BOARD_H
 #include "Spot.h"
 #include "Piece.h"
-#include<vector>
+
 using namespace std;
 
 
+class Spot;
 class Board
 {
 
 
 public:
 
-Spot boxes[8][8] ;   // Chess board, a 2D vector
+Spot* boxes[8][8] ;   // Chess board, a 2D vector
 
 Board() ;
+//~Board() ;
 
+void printBoard() ;
 
 
 };
