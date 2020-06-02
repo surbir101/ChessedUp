@@ -1,0 +1,131 @@
+# depslib dependency file v1.0
+1591138551 source:/home/surbir/Desktop/ChessedUp/main.cpp
+	<iostream>
+	"Piece.h"
+	"Board.h"
+	"HumanPlayer.h"
+	"ComputerPlayer.h"
+	"Move.h"
+	"cstdlib"
+	"King.h"
+	"Pawn.h"
+	"Queen.h"
+	"Rook.h"
+	"Bishop.h"
+	"Knight.h"
+	"Game.h"
+	<string>
+
+1590867575 /home/surbir/Desktop/ChessedUp/Piece.h
+	"Board.h"
+	"Spot.h"
+	<iostream>
+	<cstdlib>
+
+1590867546 source:/home/surbir/Desktop/ChessedUp/Piece.cpp
+	"Piece.h"
+	<iostream>
+	<string>
+
+1590872468 /home/surbir/Desktop/ChessedUp/Spot.h
+	"Piece.h"
+
+1590875836 source:/home/surbir/Desktop/ChessedUp/Spot.cpp
+	"Spot.h"
+	<iostream>
+	"Piece.h"
+
+1590867660 /home/surbir/Desktop/ChessedUp/King.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+	<cstdlib>
+
+1590876385 source:/home/surbir/Desktop/ChessedUp/Board.cpp
+	<iostream>
+	<string>
+	"Piece.h"
+	"Spot.h"
+	"King.h"
+	"Board.h"
+	"Knight.h"
+	"Rook.h"
+	"Bishop.h"
+	"Queen.h"
+	"Pawn.h"
+	"Spot.h"
+	"Piece.h"
+
+1590872501 /home/surbir/Desktop/ChessedUp/Board.h
+	"Spot.h"
+	"Piece.h"
+
+1590867723 /home/surbir/Desktop/ChessedUp/Knight.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+	<iostream>
+	<cstdlib>
+
+1590867834 /home/surbir/Desktop/ChessedUp/Rook.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+	<iostream>
+
+1590868866 /home/surbir/Desktop/ChessedUp/Bishop.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+	<iostream>
+
+1590867893 /home/surbir/Desktop/ChessedUp/Queen.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+
+1590868816 /home/surbir/Desktop/ChessedUp/Pawn.h
+	"Piece.h"
+	"Board.h"
+	"Spot.h"
+
+1588303271 source:/home/surbir/Desktop/ChessedUp/King.cpp
+	"Piece.h"
+	"King.h"
+	"Board.h"
+	"Spot.h"
+	<iostream>
+	<cstdlib>
+
+1590871297 /home/surbir/Desktop/ChessedUp/Player.h
+	<string>
+	<iostream>
+
+1590869133 /home/surbir/Desktop/ChessedUp/HumanPlayer.h
+	"Player.h"
+
+1590869116 /home/surbir/Desktop/ChessedUp/ComputerPlayer.h
+	"Player.h"
+
+1590871213 /home/surbir/Desktop/ChessedUp/Move.h
+	"Player.h"
+	"Spot.h"
+
+1590869019 source:/home/surbir/Desktop/ChessedUp/Player.cpp
+	"Player.h"
+
+1590872227 source:/home/surbir/Desktop/ChessedUp/Move.cpp
+	"Move.h"
+
+1591139208 source:/home/surbir/Desktop/ChessedUp/Game.cpp
+	"Game.h"
+
+1591138661 /home/surbir/Desktop/ChessedUp/Game.h
+	"HumanPlayer.h"
+	"Board.h"
+	"Move.h"
+	"King.h"
+	<list>
+	<typeinfo>
+	<string>
+

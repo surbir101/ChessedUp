@@ -1,18 +1,24 @@
+//Player class implementation file
+
+
 #include "Player.h"
 
+//Constructor
+Player::Player(string name, bool whiteSide)
+{
+    this->whiteSide = whiteSide ;
+    this->name = name ;
 
-Player::Player(bool whiteSide)
+}
+
+//Setter
+void Player::setWhiteSide(bool whiteSide)
 {
     this->whiteSide = whiteSide ;
 
 }
 
-void Player::setWhiteSide(bool whiteside)
-{
-    this->whiteSide = whiteside ;
-
-}
-
+//Getter
 bool Player::isWhiteSide()
 {
     if(whiteSide == true)
@@ -22,15 +28,23 @@ bool Player::isWhiteSide()
 
 }
 
+//Setter
 void Player::setHumanPlayer(bool humanPlayer)
 {
     this->humanPlayer = humanPlayer ;
 }
 
+//Getter
 bool Player::isHumanPlayer()
 {
     if(humanPlayer == true)
         return true;
     else
         return false;
+}
+
+ Player::~Player()
+{
+    cout << "Player base class destructor called  " << endl ;
+
 }

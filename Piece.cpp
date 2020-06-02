@@ -1,10 +1,12 @@
+// Implementation file for Piece class
+
 #include "Piece.h"
 #include <iostream>
 #include <string>
 
 using namespace std;
 
-//Piece class implementation file
+
 
 //Constructor
     Piece::Piece(bool white, bool killed)
@@ -14,12 +16,14 @@ using namespace std;
     }
 
 
-     void Piece::setWhite(bool white)   //setter
+//setter for color
+     void Piece::setWhite(bool white)
     {
        this->white = white ;
     }
 
-     bool Piece::isWhite()  //getter
+//getter for color
+     bool Piece::isWhite()
     {
         if(white == true)
             return true;
@@ -27,12 +31,14 @@ using namespace std;
             return false;
     }
 
-    void Piece::setKilled(bool killed)  //setter
+//setter for alive or dead
+    void Piece::setKilled(bool killed)
     {
        this->killed = killed ;
     }
 
-     bool Piece::isKilled() //getter
+//getter for alive or dead
+     bool Piece::isKilled()
     {
         if(killed == true)
             return true;
@@ -42,12 +48,13 @@ using namespace std;
 
 
 
-    /*destructor
+
     Piece::~Piece()
     {
+        cout << "Base class destructor called  " << endl ;
 
 
     }
-*/
+
 
 
